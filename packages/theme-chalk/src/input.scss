@@ -1,0 +1,11 @@
+@import "mixins/mixins";
+@import "common/var";
+
+@include b(input) {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $--button-color;
+    border: 1px solid $--button-border-color;
+}

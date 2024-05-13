@@ -1,0 +1,8 @@
+{
+    "button":"./packages/button/index.js",
+    "input":"./packages/input/index.js",
+    "alert":"./packages/alert/index.js",
+    "index":"./packages/index.js",
+    "flowChart":"./packages/flow-chart/index.js",
+    "uploadFile":"./packages/upload-file/index.js"
+}

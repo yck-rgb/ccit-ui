@@ -1,0 +1,33 @@
+{
+  "name": "@yck-web/ccit-ui",
+  "version": "1.0.21",
+  "description": "ccit ui 测试库",
+  "main": "lib/index.js",
+  "style": "lib/theme-chalk/index.css",
+  "author": {
+    "name": "yck"
+  },
+  "scripts": {
+    "doc:install": "cd ./example&&npm install",
+    "doc:dev": "cd ./example&&npm run dev",
+    "doc:build": "cd ./example&&npm run build",
+    "lib": "ccit-cli lib",
+    "pub": "ccit-cli pub",
+    "git": "node ./bin/git.js"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "ccit-ui"
+  },
+  "devDependencies": {
+    "@yck-web/ccit-cli": "^1.2.8",
+    "typescript": "^4.4.2"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.2"
+  },
+  "dependencies": {}
+}

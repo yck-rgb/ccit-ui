@@ -1,0 +1,138 @@
+@import "mixins/mixins";
+@import "common/var";
+
+
+@include b(flow-chart) {
+    min-width: 841PX;
+    min-height: 240PX;
+    background: #ffffff;
+    border: 1PX solid #e6e7ec;
+    opacity: 1;
+    border-radius: 0PX 0PX 0PX 4PX;
+    padding: 15PX 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    &-column {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+
+        &:nth-child(1) {
+            width: 260PX;
+        }
+
+        &:nth-child(2) {
+            width: 160PX;
+        }
+
+        &:nth-child(3) {
+            width: 160PX;
+        }
+
+        &:nth-child(4) {
+            width: 260PX;
+        }
+
+        &-border {
+            position: absolute;
+            right: 0;
+            top: 59PX;
+            width: 2PX;
+            background: #cbcdd6;
+        }
+    }
+
+    &-head-title {
+        width: 100%;
+        height: 34PX;
+        padding: 5PX 20PX;
+
+        &-container {
+            background: #ffebbc;
+            border-radius: 4PX;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 12PX;
+            font-family: Microsoft YaHei UI;
+            font-weight: 400;
+            color: #d08718;
+        }
+    }
+
+    &-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-row {
+        width: 100%;
+        height: 50PX;
+        padding: 5PX 20PX;
+        position: relative;
+
+        &-container {
+            width: 100%;
+            height: 100%;
+            background: #e8f3ff;
+            border: 1PX solid #c8e2ff;
+            border-radius: 4PX;
+            font-size: 14PX;
+            font-family: Microsoft YaHei UI;
+            font-weight: 400;
+            color: #406ea1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            user-select: none;
+            cursor: pointer;
+        }
+    }
+
+    &-border {
+        position: absolute;
+
+        &__left {
+            left: 0;
+            top: 25PX;
+            border-top: 2PX solid #cbcdd6;
+            width: 20PX;
+            height: 51PX;
+
+            .ccit-flow-chart-border__arrow {
+                width: 0;
+                height: 0;
+                border-top: 6PX solid transparent;
+                border-left: 8PX solid rgba(203, 205, 214, 1);
+                border-bottom: 6PX solid transparent;
+                position: absolute;
+                right: 0;
+                top: -7PX;
+            }
+        }
+
+        &__right {
+            right: 0;
+            top: 25PX;
+            border-top: 2PX solid rgba(203, 205, 214, 1);
+            width: 20PX;
+            height: 50PX;
+        }
+    }
+}

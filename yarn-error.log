@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseSVN\bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Roaming\npm;D:\soft\VSCodeUserSetup1.45.0\Microsoft VS Code\bin;C:\Users\Admin\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.5
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\Admin\AppData\Local\Yarn\Cache\v6\npm-ms-2.1.2-d09d1f357b443f493382a8eb3ccd183872ae6009-integrity\node_modules\ms\license.md' -> 'D:\server\phpstudy_pro\WWW\ccit-ui\node_modules\@babel\core\node_modules\ms\license.md'
+
+npm manifest: 
+  {
+    "name": "@yck-web/ccit-ui",
+    "version": "1.0.21",
+    "description": "ccit ui 测试库",
+    "main": "lib/index.js",
+    "style": "lib/theme-chalk/index.css",
+    "author": "yck",
+    "scripts": {
+      "doc:install": "cd ./example&&npm install",
+      "doc:dev": "cd ./example&&npm run dev",
+      "doc:build": "cd ./example&&npm run build",
+      "lib": "ccit-cli"
+    },
+    "files": [
+      "lib/*"
+    ],
+    "publishConfig": {
+      "registry": "https://registry.npmjs.org/",
+      "tag": "ccit-ui"
+    },
+    "devDependencies": {
+      "@yck-web/ccit-cli": "^1.2.6",
+      "typescript": "^4.4.2"
+    },
+    "peerDependencies": {
+      "vue": "^2.5.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
